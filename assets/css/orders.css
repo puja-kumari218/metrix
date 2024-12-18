@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f8f9fc;
+  margin: 0;
+  padding: 0;
+}
+
+/* font family */
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* main section of empty orders */
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.orders-header h5 {
+  font-size: 1.2rem;
+  color: rgba(69, 70, 78, 1);
+  font-weight: 500;
+ 
+}
+
+
+/* common header cards  */
+.order-box {
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+/* Custom Dropdown Button */
+.custom-dropdown-btn {
+  border: none;
+  font-size: 14px;
+  color: #8B8D97;
+  display: flex;
+  justify-content: flex-start; /* Align the button content to the left */
+  background-color: transparent;
+}
+
+/* Custom Dropdown Button Icon */
+.custom-dropdown-btn i {
+  margin-left: 4px;
+  margin-top: 1px; /* Adds proper vertical alignment */
+}
+
+
+/* Custom Dropdown Menu */
+.custom-dropdown-menu {
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+  border: none;
+  width: auto;
+  min-width: 100px;
+  padding: 0;
+  background-color: white;
+  left: 0; /* Align dropdown to the left */
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+/* Custom Dropdown Item */
+.custom-dropdown-menu .dropdown-item {
+  font-size: 14px;
+  font-weight: 400;
+  color: #45464E;
+  padding: 6px 10px;
+  transition: color 0.2s ease;
+}
+
+/* Hover Effect */
+.custom-dropdown-menu .dropdown-item:hover {
+  color: #4e5fe4; /* Change text color on hover */
+  background-color: transparent; /* No background on hover */
+}
+
+/* Remove Border from Items */
+.custom-dropdown-menu .dropdown-item:not(:last-child) {
+  border-bottom: none;
+}
+
+/* Custom styling for text-muted paragraphs */
+.custom-text-muted {
+  color: #8B8D97;
+  font-size: 16px;
+}
+
+/* Custom styling for h5 box count */
+.custom-box-count {
+  color: #45464E;
+  font-size: 16px;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  background-color: #FFCC9129;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 20px;
+}
+
+/* Empty state */
+.empty-state {
+  padding: 25px;
+  background: #fff;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.empty-img {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 20px;
+}
+
+.empty-state h3 {
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.empty-state p {
+  color: #8B8D97;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.empty-state .btn {
+  background-color: #4e5fe4;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.empty-state .btn:hover {
+  background-color: #4e5fe4;
+  border: none;
+  color: #fff;
+}
+
+/* tables css start here */
+
+/* Table Container */
+.table-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Table Header */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-header h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #45464E;
+}
+
+/* Table Actions */
+.table-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Action Buttons */
+.filter-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px;
+  background: transparent;
+  border: 1px solid rgb(83 84 92 / 50%);
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(83 84 92);
+  cursor: pointer;
+  border-radius: 5px;
+  height: 34px;
+}
+
+.filter-btn i {
+  font-size: 14px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 4px 12px;
+  height: 34px;
+  width: 230px;
+}
+
+.search-bar i {
+  color: #130F26;
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+.search-bar input {
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.search-bar input::placeholder {
+  font-size: 14px;
+  color: #8B8D97;
+}
+
+
+/* Table */
+table {
+  width: 100%;
+}
+
+thead th {
+  border-top: 1px solid #ddd;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 8px;
+  border-bottom: 1px solid #ddd;
+  color: #2C2D33;
+}
+
+thead i {
+  color: #00092E;
+  font-size: 17px;
+}
+
+
+tbody td {
+  padding: 8px 8px;
+  font-size: 14px;
+  color: #6E7079;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+/* Reset input styles */
+.custom-checkbox input {
+  display: none;
+}
+
+/* Checkbox container */
+.custom-checkbox span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d1d1d1;
+  border-radius: 4px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Checkmark (Tick) */
+.custom-checkbox span::after {
+  content: '\2713';
+  /* Unicode for checkmark */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  font-size: 14px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Checked state */
+.custom-checkbox input:checked+span {
+  background-color: #4e5fe4;
+  border-color: #4e5fe4;
+}
+
+.custom-checkbox input:checked+span::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Custom filter icon style */
+.custom-filter-icon {
+  cursor: pointer;
+  transition: font-size 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Action buttons */
+.action-btn,
+.status-btn {
+  font-size: 12px;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn {
+  background-color: #5E636614;
+  color: #8B8D97;
+}
+
+.action-btn i {
+  margin-left: 5px;
+}
+
+.status-btn.completed {
+  background-color: #32936F29;
+  color: #519C66;
+}
+
+.status-btn.in-progress {
+  background-color: #5570F129;
+  color: #5570F1;
+}
+
+.status-btn.pending {
+  background-color: #FFF2E2;
+  color: #1C1D22;
+}
+
+.action-btn:hover,
+.status-btn:hover {
+  opacity: 1;
+}
+
+/* buttn dropdown css */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide default icon */
+.action-btn::after {
+  content: none;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 5px 0;
+  width: 80px;
+  display: none;
+  z-index: 1000;
+  border: none;
+}
+
+.dropdown-menu.active {
+  display: block;
+}
+
+
+
+/* Pagination section */
+.pagination-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 8px 0;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+
+/* Left and Right Containers */
+.pagination-left,
+.pagination-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Pagination Item */
+.pagination-item {
+  display: flex;
+  align-items: center;
+  background-color: #5e636614;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #8b8d97;
+  gap: 5px;
+}
+
+/* Page Info */
+.page-info {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.page-info.light-text {
+  color: #a6a8b1;
+}
+
+.page-info-text {
+  color: #666666;
+}
+
+/* Pagination Icons */
+.pagination-icons i {
+  font-size: 15px;
+  color: #1c1d22;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.pagination-icons i:hover {
+  color: #5570f1;
+}
+
+/* view borders*/
+.right_sec {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+
+.left_sec .text_muted {
+  color: #8B8D97;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header-tracking i {
+  color: #5570f1;
+}
+
+
+.header_text {
+  color: #5570f1;
+
+}
+
+/* table image */
+
+.product-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.product-cell {
+  display: flex;
+  align-items: center;
+}
+
+/* Amount Section Styles */
+.amount-section {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.amount-content {
+  display: flex;
+  gap: 10px;
+  /* Adds spacing between label and value */
+  align-items: center;
+}
+
+.amount-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.amount-value {
+  font-size: 16px;
+  color: #007bff;
+}
+
+/* custumer veiw page css */
+.icon-box-customer {
+  background-color: #5570F114;
+  color: #5570F1;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.icon-box-customer i {
+  color: #5570F1;
+}
+
+.filter-menu {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  z-index: 999;
+}
+
+.filter-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.filter-section {
+  margin-bottom: 15px;
+}
+
+.filter-menu .label {
+  font-size: 12px;
+  color: #1C1D22;
+  margin-bottom: 5px;
+  font-weight: 400;
+  text-align: start;
+}
+
+.order-type label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.order-type input {
+  margin-right: 8px;
+}
+
+.filter-dropdown {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.amount-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.amount-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount-input {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.amount-label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 3px;
+}
+
+.filter-button {
+  text-align: center;
+}
+
+.filter-button button {
+  background-color: #5c6ef8;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 0;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-button button:hover {
+  background-color: #4a5ac9;
+}

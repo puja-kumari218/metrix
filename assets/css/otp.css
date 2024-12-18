@@ -1,0 +1,45 @@
+ /* Custom styles */
+.form-control {
+    background: #EFF1F999;
+    border: 1px solid #EFF1F999;
+    padding: 12px; 
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 20px; 
+    color: #6E7079; 
+    box-sizing: border-box; 
+}
+
+.otp-input {
+    width: 80%;
+    max-width: 300px; 
+    margin: 0 auto; 
+    border: 1px solid #EFF1F999;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    background: #EFF1F999;
+    color: #6E7079; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 50px; 
+    box-shadow: none; 
+    transition: none; 
+    outline: none; 
+}
+
+.otp-input::placeholder {
+    color: #6E7079; 
+    font-size: 25px; 
+    letter-spacing: 10px; 
+    text-align: center;
+    line-height: normal;
+}
+
+.otp-input:focus {
+    outline: none; 
+    background: #EFF1F999; 
+    border-color: #EFF1F999; 
+    box-shadow: none; 
+}

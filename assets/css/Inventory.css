@@ -1,0 +1,255 @@
+/* Button Style for Add Item */
+.btn-add {
+    background-color: #4e5fe4;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 4px;
+  }
+  
+  .btn-add:hover {
+    background-color: #4e5fe4;
+    border: none;
+    color: #fff;
+  }
+  
+  /* Empty State Button Style */
+  .empty-state .btn {
+    background-color: #4e5fe4;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .empty-state .btn:hover {
+    background-color: #4e5fe4;
+    border: none;
+    color: #fff;
+  }
+  
+
+  /* when click on btn new inventory css */
+  
+  /* header style btn*/
+  /* Base button styles */
+.Inventory_btn {
+  font-size: 12px;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Black button style */
+.Inventory_btn.btn-black {
+  background-color: black;
+  color: #FFFFFF;
+}
+
+/* Purple button style */
+.Inventory_btn.btn-purple {
+  background-color: #5570F1; 
+  color: #FFFFFF;
+}
+
+
+.container_section {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.form-section-container {
+  padding: 20px;
+  background-color: #fff;
+  width: 65%;
+  height: 75vh;
+  border-radius: 12px;
+}
+
+.image-section-container {
+  padding: 20px;
+  background-color: #fff;
+  width: 35%;
+  border-radius: 12px;
+}
+
+
+.custom-input {
+  position: relative;
+  display: flex;
+  align-items: center; 
+}
+
+.custom-input input {
+  width: 100%;
+  padding-right: 30px; 
+  border-radius: 4px;
+  border: 1px solid #DDE2E5;
+  background-color: #DDE2E5;
+}
+
+/* Dropdown icon */
+
+.dropdown-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #83898C;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  right: 0; 
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu li:hover {
+  color: #5570F1;
+}
+
+/* Show dropdown on click */
+.custom-input .dropdown-icon {
+  cursor: pointer;
+}
+
+/* select category */
+/* stock placeholder icon  */
+.icon-container {
+  position: absolute;
+  right: 5px;
+  top: 0; 
+  bottom: 0; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  gap: 3px; 
+}
+
+.custom-input i {
+  color: #83898C;
+  background-color: #DDE2E5;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; 
+  height: 20px;
+  border: 1px solid #DDE2E5;
+}
+
+/* Border radius for individual icons */
+#increment {
+  border-top-right-radius: 4px; 
+  border-bottom-right-radius: 0;
+}
+
+#decrement {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 4px;
+}
+
+/* stock placeholder icon  */
+/* dateicon */
+
+.calendar-icon {
+  position: absolute;
+  left: 10px; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#expiryDate {
+  padding-left: 40px; 
+  padding-right: 10px; 
+  border: none; 
+  outline: none;
+}
+
+.custom-input input,
+.custom-input textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #EFF1F999;
+  border: none;
+  border-radius: 4px;
+}
+
+.custom-input input::placeholder,
+.custom-input textarea::placeholder {
+  color: #ABAFB1;
+}
+
+.custom-input input:focus,
+.custom-input textarea:focus {
+  outline: none;
+  border-color: none;
+  box-shadow: none;
+}
+
+
+
+.toggle-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: #8B8D97;
+}
+
+.toggle-icon.fa-toggle-on {
+  color: #5570F1; 
+}
+
+.upload-top-box {
+  text-align: center;
+  background-color: #F4F5FA;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.square-box {
+  height: 150px;
+  border: 1px dashed #ced4da;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blank-box {
+  background-color: #EFF1F999;
+}

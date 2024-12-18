@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New-Inventory |Metrix </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" href="./assets/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="./assets/css/sidebar.css">
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <link rel="stylesheet" href="./assets/css/orders.css">
+  <link rel="stylesheet" href="./assets/css/Inventory.css">
+</head>
+<body>
+
+    <div class="container-fluid p-0">
+        <!-- Sidebar -->
+        <aside class="sidebar_sec">
+          <div class="sidebar-header p-3">
+            <div class="logo d-flex align-items-center mb-4">
+              <img src="./assets/images/logo.png" alt="Logo" class="me-2" width="40">
+              <h4 class="m-0">Metrix</h4>
+            </div>
+            <nav>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="index.html" class="nav-link ">
+                    <i class="fa-solid fa-chart-line me-2"></i> Dashboard
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="order.html" class="nav-link ">
+                    <i class="bi bi-handbag me-2"></i> Orders
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="customer.html" class="nav-link">
+                    <i class="bi bi-people me-2"></i> Customers
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="Inventory.html" class="nav-link active">
+                    <i class="fa-regular fa-folder me-2"></i> Inventory
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="Conversation.html" class="nav-link">
+                    <i class="bi bi-chat-dots me-2"></i> Conversation
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="setting.html" class="nav-link">
+                    <i class="bi bi-gear me-2"></i> Setting
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sidebar-footer p-3">
+            <a href="logout.html" class="nav-link text-danger">
+              <i class="fa fa-sign-out-alt me-2"></i> Logout
+            </a>
+          </div>
+        </aside>
+    
+        <!-- Content Area -->
+        <div class="content_wrapper">
+          <!-- Navbar -->
+          <header class="navbar custom-navbar p-3">
+            <div class="container-fluid">
+              <div class="navbar-left">
+                <i class="fa fa-home me-2"></i>
+                <h5 class="m-0">Inventory / New Inventory</h5>
+              </div>
+              <div class="navbar-right">
+                <button class="shop-btn me-4 active-btn">Trendy's Shop</button>
+                <div class="notification-icon me-4">
+                  <i class="fa fa-bell"></i>
+                </div>
+                <img src="./assets/images/user_icxon.png" alt="Profile" class="user-icon me-4">
+              </div>
+            </div>
+          </header>
+    
+          <!-- Main Content -->
+          <main class="main-content p-3">
+            <!-- Header -->
+            <section class="orders-header1 d-flex justify-content-between align-items-center mb-4">
+              <h5>New Inventory Item</h5>
+              <div class="button-group d-flex align-items-center gap-2">
+                <button class="Inventory_btn btn-black">Save as Draft <i class="fa-solid fa-angle-down ms-2"></i></button>
+                <button class="Inventory_btn btn-purple">Save & Publish</button>
+              </div>
+              
+            </section>
+            <!-- Form Section -->
+<div class="container_section d-flex">
+  <!-- Left and Middle Section -->
+  <section class="form-section-container">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-6">
+        <div class="form-section">
+          <div class="custom-input mb-3">
+            <input type="text" id="productName" placeholder="Product Name">
+          </div>
+          <div class="custom-input mb-3 position-relative">
+            <input type="text" id="productCategory" placeholder="Select Product Category">
+            <img src="./assets/images/arrow-icon.png" class="dropdown-icon" alt="Dropdown Icon">
+            <ul class="dropdown-menu">
+              <li>Acessories</li>
+              <li>Footwear</li>
+              <li>Clothing</li>
+            </ul>
+          </div>
+          
+          <div class="row mb-3">
+            <div class="col custom-input">
+              <input type="text" id="sellingPrice" placeholder=" Selling Price">
+            </div>
+            <div class="col custom-input">
+              <input type="text" id="costPrice" placeholder=" Cost Price">
+            </div>
+          </div>
+          <div class="custom-input mb-3 position-relative">
+            <input type="text" id="quantityStock" placeholder="Quantity in Stock">
+            <div class="icon-container">
+              <i class="fa-solid fa-sort-up pt-2" id="increment"></i>
+              <i class="fa-solid fa-sort-down pb-2" id="decrement"></i>
+            </div>
+          </div>
+          <div class="custom-input mb-3">
+            <input type="text" id="orderType" placeholder="Order Type">
+            <img src="./assets/images/arrow-icon.png" class="dropdown-icon" alt="Dropdown Icon">
+            <ul class="dropdown-menu">
+                <li>Online</li>
+                <li>Offline</li>
+            </ul>
+          </div>
+          <div class="toggle-switch mb-3" id="discountToggleSection">
+            <div class="row align-items-center">
+              <div class="col-6 text-start">
+                <span class="discount-label">Discount</span>
+              </div>
+              <div class="col-6 text-end d-flex align-items-center justify-content-end">
+                <span class="add-discount-text me-2">Add Discount</span>
+                <i class="fa-solid fa-toggle-off toggle-icon" id="discountToggle"></i>
+              </div>
+            </div>
+            <div class="toggle-content d-none">
+              <div class="row mb-3">
+                <div class="col-6 custom-input">
+                  <input type="text" id="sellingPrice" placeholder="Type">
+                  <img src="./assets/images/arrow-icon.png" class="dropdown-icon me-2" alt="Dropdown Icon">
+                </div>
+                <div class="col custom-input">
+                  <input type="text" id="costPrice" placeholder="Value">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="toggle-switch mb-3" id="expiryDateToggleSection">
+            <div class="row align-items-center">
+              <div class="col-6 text-start">
+                <span class="discount-label">Expiry Date</span>
+              </div>
+              <div class="col-6 text-end d-flex align-items-center justify-content-end">
+                <span class="add-discount-text me-2">Add Expiry Date</span>
+                <i class="fa-solid fa-toggle-off toggle-icon" id="DateToggle"></i>
+              </div>
+            </div>
+            <!-- datepicker -->
+            <div class="toggle-content d-none">
+              <div class="row">
+                <div class="col custom-input">
+                  <input type="text" id="expiryDate" placeholder="18/12/2001">
+                  <img src="./assets/images/Calendar.png" class="calendar-icon ms-2" alt="Calendar Icon">
+              </div>
+              </div>
+            </div>
+            <!-- datepicker -->
+ 
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Middle Column -->
+      <div class="col-6">
+        <div class="form-section">
+          <div class="custom-input mb-3">
+            <textarea id="shortDescription" rows="3" placeholder="Enter Short Description"></textarea>
+          </div>
+          <div class="custom-input mb-3">
+            <textarea id="longDescription" rows="5" placeholder="Enter Product Long Description"></textarea>
+          </div>
+          <div class="toggle-switch mb-3">
+            <div class="row align-items-center">
+              <div class="col-6 text-start">
+                <span class="discount-label">Return Policy</span>
+              </div>
+              <div class="col-6 text-end d-flex align-items-center justify-content-end">
+                <span class="add-discount-text me-2">Add Return Policy</span>
+                <i class="fa-solid fa-toggle-off toggle-icon" id="returnToggle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col custom-input">
+                  <input type="text" id="expiryDate" placeholder="18/12/2001">
+                  <img src="./assets/images/Calendar.png" class="calendar-icon ms-2" alt="Calendar Icon">
+              </div>
+
+              <div class="col custom-input">
+                <input type="text" id="expiryDate" placeholder="12:00 AM">
+                <img src="./assets/images/fi_clock.png" class="calendar-icon ms-2" alt="Calendar Icon">
+            </div>
+           
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Right Section -->
+  <section class="image-section-container">
+    <div class="form-section-image">
+      <!-- Top Box -->
+      <div class="upload-top-box mb-4">
+        <img src="./assets/images/Image.png" alt="Preview Image" class="top-box-image">
+        <div class="upload-info mt-3">
+          <div class="upload-icon">
+            <p class="upload-text"><i class="fa-solid fa-cloud-arrow-up me-2"></i>Upload Image</p>
+          </div>
+          <small>File format: jpg, png | Recommended size: 600x600</small>
+        </div>
+      </div>
+
+      <!-- Bottom Two Boxes -->
+      <div class="row gx-3">
+        <div class="col">
+          <div class="square-box">
+            <img src="./assets/images/Image.png" alt="Image" class="square-box-image">
+            <div class="square-box-info">
+              <p class="upload-text me-2"><i class="fa-solid fa-cloud-arrow-up me-2"></i>Upload Image</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="square-box blank-box"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+           
+          </main>
+        </div>
+      </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/inventory.js"></script>
+</body>
+</html>

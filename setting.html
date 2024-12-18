@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat | Metrix</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="./assets/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/orders.css">
+    <link rel="stylesheet" href="./assets/css/setting.css">
+</head>
+<body>
+<div class="container-fluid p-0">
+    <!-- Sidebar -->
+    <aside class="sidebar_sec">
+        <div class="sidebar-header p-3">
+            <div class="logo d-flex align-items-center mb-4">
+                <img src="./assets/images/logo.png" alt="Logo" class="me-2" width="40">
+                <h4 class="m-0">Metrix</h4>
+            </div>
+            <nav>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="index.html" class="nav-link">
+                            <i class="fa-solid fa-chart-line me-2"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="order.html" class="nav-link">
+                            <i class="bi bi-handbag me-2"></i> Orders
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="customer.html" class="nav-link">
+                            <i class="bi bi-people me-2"></i> Customers
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="Inventory.html" class="nav-link">
+                            <i class="fa-regular fa-folder me-2"></i> Inventory
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="Conversation.html" class="nav-link">
+                            <i class="bi bi-chat-dots me-2"></i> Conversation
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="setting.html" class="nav-link active">
+                            <i class="bi bi-gear me-2"></i> Setting
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sidebar-footer p-3">
+            <a href="logout.html" class="nav-link text-danger">
+                <i class="fa fa-sign-out-alt me-2"></i> Logout
+            </a>
+        </div>
+    </aside>
+
+    <!-- Content Area -->
+    <div class="content_wrapper">
+        <!-- Navbar -->
+        <header class="navbar custom-navbar p-3">
+            <div class="container-fluid">
+                <div class="navbar-left">
+                    <i class="fa fa-home me-2"></i>
+                    <h5 class="m-0">Conversation</h5>
+                </div>
+                <div class="navbar-right">
+                    <button class="shop-btn me-4 active-btn">Trendy's Shop</button>
+                    <div class="notification-icon me-4">
+                        <i class="fa fa-bell"></i>
+                    </div>
+                    <img src="./assets/images/user_icxon.png" alt="Profile" class="user-icon me-4">
+                </div>
+            </div>
+        </header> 
+    </div>
+    <div class="container">
+      <!-- Tabs Section -->
+      <div class="tabs">
+          <div class="tab active">Account</div>
+          <div class="tab">Business</div>
+          <div class="tab">Security</div>
+      </div>
+  
+      <!-- Header Section -->
+      <div class="header">Account Settings</div>
+  
+      <!-- Form Section -->
+      <div class="form-section">
+          <!-- Form Left -->
+          <div class="form-left">
+              <div class="mb-3 position-relative">
+                  <input type="text" class="form-control" placeholder="First Name">
+                  <span class="input-group-text">
+                      <i class="bi bi-person"></i>
+                  </span>
+              </div>
+              <div class="mb-3 position-relative">
+                  <input type="text" class="form-control" placeholder="Last Name">
+                  <span class="input-group-text">
+                      <i class="bi bi-person"></i>
+                  </span>
+              </div>
+              <div class="mb-3 position-relative">
+                  <input type="email" class="form-control" placeholder="Email">
+                  <span class="input-group-text">
+                      <i class="bi bi-envelope"></i>
+                  </span>
+              </div>
+              <div class="mb-3 position-relative">
+                  <div class="d-flex">
+                      <select class="form-select w-25">
+                          <option>+234</option>
+                          <option>+1</option>
+                      </select>
+                      <input type="text" class="form-control w-75" placeholder="Phone Number">
+                  </div>
+              </div>
+              <div class="mb-3 position-relative">
+                  <input type="text" class="form-control" placeholder="Address">
+                  <span class="input-group-text">
+                      <i class="bi bi-geo-alt"></i>
+                  </span>
+              </div>
+              <div class="d-flex gap-3">
+                  <select class="form-select">
+                      <option>Country</option>
+                      <option>Nigeria</option>
+                  </select>
+                  <select class="form-select">
+                      <option>State</option>
+                      <option>Lagos</option>
+                  </select>
+              </div>
+          </div>
+  
+          <!-- Profile Section -->
+          <div class="profile-section">
+              <div class="profile-image">
+                  <img src="https://via.placeholder.com/120" alt="Profile Picture">
+                  <div class="overlay-icons">
+                      <i class="bi bi-camera"></i>
+                      <i class="bi bi-trash"></i>
+                  </div>
+              </div>
+              <button class="btn btn-primary update-btn">Update</button>
+          </div>
+      </div>
+  </div>
+
+</div>
+
+  
+  
+</div>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/order.js"></script>
+</body>
+</html>

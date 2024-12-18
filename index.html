@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Metrix</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" href="./assets/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="./assets/css/sidebar.css">
+  <link rel="stylesheet" href="./assets/css/dashboard.css">
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <link rel="stylesheet" href="./assets/css/orders.css">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+
+
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <!-- Sidebar -->
+    <aside class="sidebar_sec">
+      <div class="sidebar-header p-3">
+        <div class="logo d-flex align-items-center mb-4">
+          <img src="./assets/images/logo.png" alt="Logo" class="me-2" width="40">
+          <h4 class="m-0">Metrix</h4>
+        </div>
+        <nav>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="index.html" class="nav-link active">
+                <i class="fa-solid fa-chart-line me-2"></i> Dashboard
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="order.html" class="nav-link">
+                <i class="bi bi-handbag me-2"></i> Orders
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="customers.html" class="nav-link">
+                <i class="bi bi-people me-2"></i> Customers
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="Inventory.html" class="nav-link">
+                <i class="fa-regular fa-folder me-2"></i> Inventory
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="Conversation.html" class="nav-link">
+                <i class="bi bi-chat-dots me-2"></i> Conversation
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="setting.html" class="nav-link">
+                <i class="bi bi-gear me-2"></i> Setting
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sidebar-footer p-3">
+        <a href="logout.html" class="nav-link text-danger">
+          <i class="fa fa-sign-out-alt me-2"></i> Logout
+        </a>
+      </div>
+    </aside>
+
+    <!-- Content Area -->
+    <div class="content_wrapper">
+      <!-- Navbar -->
+      <header class="navbar custom-navbar p-3">
+        <div class="container-fluid">
+          <div class="navbar-left">
+            <i class="fa fa-home me-2"></i>
+            <h5 class="m-0">Dashboard</h5>
+          </div>
+          <div class="navbar-right">
+            <button class="shop-btn me-4 active-btn">Trendy's Shop</button>
+            <div class="notification-icon me-4">
+              <i class="fa fa-bell"></i>
+            </div>
+            <img src="./assets/images/user_icxon.png" alt="Profile" class="user-icon me-4">
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main-content p-3">
+        <section class="orders-header d-flex justify-content-between align-items-center">
+          <h5>Dashboard</h5>
+        </section>
+        <!-- header card Content -->
+        <section class="container-fluid px-4">
+          <div class="row text-center">
+            <!-- 1st Order Box -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="order-box p-3 bg-white rounded h-100">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="icon-box-customer d-flex align-items-center justify-content-center p-2">
+                    <i class="bi bi-pie-chart fs-5"></i>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn custom-dropdown-btn btn-sm" type="button" id="timePeriod2"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      This Month <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Week</a></li>
+                      <li><a class="dropdown-item" href="#">This Year</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row text-start">
+                  <div class="col">
+                    <p class="mb-1 custom-text-muted">Sales</p>
+                    <h5 class="mb-0 custom-box-count fw-bold">₦0.00 <span class="text-success">+00.0</span></h5>
+                  </div>
+
+                  <div class="col">
+                    <p class="mb-1 custom-text-muted">Volume</p>
+                    <h5 class="mb-0 custom-box-count fw-bold">0</h5>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- 2nd Order Box -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="order-box p-3 bg-white rounded h-100">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="icon-box d-flex align-items-center justify-content-center p-2">
+                    <i class="bi bi-handbag fs-5"></i>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn custom-dropdown-btn btn-sm" type="button" id="timePeriod2"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      This Month <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Week</a></li>
+                      <li><a class="dropdown-item" href="#">This Year</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row text-start">
+                  <div class="col">
+                    <p class="mb-1 custom-text-muted">Customers</p>
+                    <h5 class="mb-0 custom-box-count fw-bold">0 <span class="text-success">+00.0</span></h5>
+                  </div>
+                  <div class="col">
+                    <p class="mb-1 custom-text-muted">Active</p>
+                    <h5 class="mb-0 custom-box-count fw-bold">0 <span class="text-success">+00.0</span></h5>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- 3rd Order Box -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="order-box p-3 bg-white rounded h-100">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="icon-box d-flex align-items-center justify-content-center p-2">
+                    <i class="bi bi-people fs-5"></i>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn custom-dropdown-btn btn-sm" type="button" id="timePeriod2"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      This Month <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Week</a></li>
+                      <li><a class="dropdown-item" href="#">This Year</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row text-start">
+                  <div class="col">
+                    <p class="mb-1 custom-text-muted">All orders</p>
+                    <h5 class="mb-0 custom-box-count fw-bold">0 </h5>
+                  </div>
+                  <div class="col">
+                    <p class="mb-1 custom-text-muted">Pending</p>
+                    <h5 class="mb-0 custom-box-count fw-bold">0 </h5>
+                  </div>
+                  <div class="col">
+                    <p class="mb-1 custom-text-muted">Completed</p>
+                    <h5 class="mb-0 custom-box-count fw-bold">0 <span class="text-success">+0.00%</span></h5>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <section class="empty-state-section mt-3">
+            <!-- donut Card -->
+            <div class="chart_card bg-white">
+              <div class="container">
+                <div class="header d-flex justify-content-between align-items-center">
+                  <h5>Marketting</h5>
+                  <div class="dropdown">
+                    <button class="btn custom-dropdown-btn btn-sm" type="button" id="timePeriod2"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      This Month <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Week</a></li>
+                      <li><a class="dropdown-item" href="#">This Year</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="horizontal-line d-flex align-items-center gap-4">
+                  <div class="dot-text d-flex align-items-center gap-2">
+                    <div class="dot common_circle"></div>
+                    <span class="text-muted">Acquisition</span>
+                  </div>
+                  <div class="dot-text d-flex align-items-center gap-2">
+                    <div class="dot common_circle1"></div>
+                    <span class="text-muted">Purchase</span>
+                  </div>
+                  <div class="dot-text d-flex align-items-center gap-2">
+                    <div class="dot common_circle2"></div>
+                    <span class="text-muted">Retention</span>
+                  </div>
+                </div>
+                <div class="image-container text-center">
+                  <img src="./assets/images/donut_graph.png" alt="Donut Graph" />
+                </div>
+              </div>
+            </div>
+  
+  
+            <!-- donut Card -->
+            <!-- 2card similar -->
+            <div class="card_1">
+              <div class="first_card">
+                <div class="col-lg-12 col-md-6 col-sm-12">
+                  <article class="order-box p-3 bg-white rounded h-100">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <div class="icon-box-customer d-flex align-items-center justify-content-center p-2">
+                        <i class="bi bi-folder2 fs-5"></i>
+                      </div>
+  
+                    </div>
+                    <div class="row text-start">
+                      <div class="col">
+                        <p class="mb-1 custom-text-muted">All Products</p>
+                        <h5 class="mb-0 custom-box-count fw-bold">45</h5>
+                      </div>
+  
+                      <div class="col">
+                        <p class="mb-1 custom-text-muted">Active</p>
+                        <h5 class="mb-0 custom-box-count fw-bold">32%<span class="text-success">+42%</span></h5>
+  
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-lg-12 col-md-6 mt-3">
+                  <article class="order-box p-3 bg-white rounded h-100">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <div class="icon-box d-flex align-items-center justify-content-center p-2">
+                        <i class="bi bi-cart fs-5 fs-5"></i>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn custom-dropdown-btn btn-sm" type="button" id="timePeriod2"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          This Month <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="timePeriod2">
+                          <li><a class="dropdown-item" href="#">Today</a></li>
+                          <li><a class="dropdown-item" href="#">This Week</a></li>
+                          <li><a class="dropdown-item" href="#">This Year</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row text-start">
+                      <div class="col">
+                        <p class="mb-1 text-danger">Abandoned Cart</p>
+                        <h5 class="mb-0 custom-box-count fw-bold">20%<span class="text-success">+00.0%</span></h5>
+                      </div>
+  
+                      <div class="col">
+                        <p class="mb-1 custom-text-muted">Customers</p>
+                        <h5 class="mb-0 custom-box-count fw-bold">3</h5>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- 2card similar -->
+  
+            <!-- orders details -->
+            <div class="order_section rounded">
+              <div class="recent-order">
+                <p class="recent-order-title">Recent Orders</p>
+                <ul class="recent-order-list">
+                  <li class="order-lists">
+                    <div class="list-img">
+                      <img src="./assets/images/earing.jpg" alt="" srcset="">
+                    </div>
+                    <div class="order-info w-100">
+                      <div class="item-name-date d-flex justify-content-between">
+                        <p class="item-name">Ethereal Drops</p>
+                        <p class="item-date">12 Sept 2022</p>
+                      </div>
+                      <div class="item-status-qty d-flex justify-content-between">
+                        <p class="item-price-qty m-0">₦730,000.00 x 1</p>
+                        <button class="status-btn pending">Pending </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order-lists mt-3">
+                    <div class="list-img">
+                      <img src="./assets/images/earing.jpg" alt="" srcset="">
+                    </div>
+                    <div class="order-info w-100">
+                      <div class="item-name-date d-flex justify-content-between">
+                        <p class="item-name">Ethereal Drops</p>
+                        <p class="item-date">12 Sept 2022</p>
+                      </div>
+                      <div class="item-status-qty d-flex justify-content-between">
+                        <p class="item-price-qty m-0">₦730,000.00 x 1</p>
+                        <button class="status-btn completed">Completed</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order-lists mt-3">
+                    <div class="list-img">
+                      <img src="./assets/images/earing.jpg" alt="" srcset="">
+                    </div>
+                    <div class="order-info w-100">
+                      <div class="item-name-date d-flex justify-content-between">
+                        <p class="item-name">Ethereal Drops</p>
+                        <p class="item-date">12 Sept 2022</p>
+                      </div>
+                      <div class="item-status-qty d-flex justify-content-between">
+                        <p class="item-price-qty m-0">₦730,000.00 x 1</p>
+                        <button class="status-btn completed">Completed</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order-lists mt-3">
+                    <div class="list-img">
+                      <img src="./assets/images/earing.jpg" alt="" srcset="">
+                    </div>
+                    <div class="order-info w-100">
+                      <div class="item-name-date d-flex justify-content-between">
+                        <p class="item-name">Ethereal Drops</p>
+                        <p class="item-date">12 Sept 2022</p>
+                      </div>
+                      <div class="item-status-qty d-flex justify-content-between">
+                        <p class="item-price-qty m-0">₦730,000.00 x 1</p>
+                        <button class="status-btn pending">Pending </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order-lists mt-3">
+                    <div class="list-img">
+                      <img src="./assets/images/earing.jpg" alt="" srcset="">
+                    </div>
+                    <div class="order-info w-100">
+                      <div class="item-name-date d-flex justify-content-between">
+                        <p class="item-name">Ethereal Drops</p>
+                        <p class="item-date">12 Sept 2022</p>
+                      </div>
+                      <div class="item-status-qty d-flex justify-content-between">
+                        <p class="item-price-qty m-0">₦730,000.00 x 1</p>
+                        <button class="status-btn pending">Pending </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order-lists mt-3">
+                    <div class="list-img">
+                      <img src="./assets/images/earing.jpg" alt="" srcset="">
+                    </div>
+                    <div class="order-info w-100">
+                      <div class="item-name-date d-flex justify-content-between">
+                        <p class="item-name">Ethereal Drops</p>
+                        <p class="item-date">12 Sept 2022</p>
+                      </div>
+                      <div class="item-status-qty d-flex justify-content-between">
+                        <p class="item-price-qty m-0">₦730,000.00 x 1</p>
+                        <button class="status-btn pending">Pending </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order-lists mt-3">
+                    <div class="list-img">
+                      <img src="./assets/images/earing.jpg" alt="" srcset="">
+                    </div>
+                    <div class="order-info w-100">
+                      <div class="item-name-date d-flex justify-content-between">
+                        <p class="item-name">Ethereal Drops</p>
+                        <p class="item-date">12 Sept 2022</p>
+                      </div>
+                      <div class="item-status-qty d-flex justify-content-between">
+                        <p class="item-price-qty m-0">₦730,000.00 x 1</p>
+                        <button class="status-btn pending">Pending </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="graph_section ">
+              <!-- Larger Box Below Cards -->
+              <div class="card p-3 h-100 border-0">
+                <div class="row align-items-center">
+                  <!-- Left Side: Heading with Sales Button -->
+                  <div class="col-md-6 d-flex align-items-center">
+                    <h5 class="fw-bold me-3">Summary</h5>
+                    <button class="btn sales-btn d-flex align-items-center">
+                      Sales
+                      <i class="bi bi-chevron-down dropdown-icon fs-5"></i>
+                    </button>
+                    
+                    
+                  </div>
+                  <!-- Right Side: Last 7 Days with Dropdown Icon -->
+                  <div class="col-md-6 d-flex justify-content-end align-items-center">
+                    <span class="text-muted me-2">Last 7 Days</span>
+                    <i class="bi bi-chevron-down dropdown-icon"></i>
+                  </div>
+                </div>
+                <!-- Centered Image Below -->
+                <div class="row mt-4">
+                  <div class="col-12 d-flex justify-content-center">
+                    <img src="./assets/images/graphBar.png" alt="Graph Image" class="img-fluid" style="max-height: 300px;">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+        </section>
+        <!-- graph Section start-->
+      </main>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/dash.js"></script>
+
+</body>
+
+</html>

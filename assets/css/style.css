@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f8f9fc;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font family */
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.navbar {
+  height: 70px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 40px ,30px, 40px, 30px;
+  gap: 10px;
+}
+
+.login-logo {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.login_heading {
+  margin-bottom: 35px;
+}
+.login_heading h4 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+}
+.login_heading p {
+  color: #8B8D97;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form-control {
+  background: #EFF1F999;
+  border: 1px solid #EFF1F999;
+  padding: 12px 36px 12px 48px;
+  font-size: 16px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 20px; 
+}
+.form-control:focus {
+  border-color: #EFF1F999;
+  box-shadow: none;
+}
+
+.form_icon {
+  position: relative;
+}
+
+.form_icon .icon {
+  color: #6E7079;
+  font-size: 18px;
+}
+
+.icon-end { 
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: rgba(85, 112, 241, 1);
+  border: none;
+  border-radius: 10px;
+  padding: 14px 20px 14px 20px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.login-btn:hover {
+  background-color: rgba(70, 90, 210, 1) !important;
+}
+
+
+.recover-password {
+  color: rgba(85, 112, 241, 1);
+  font-size: 14px;
+  font-weight: 400;
+}
+.login_heading a{
+font-size: 14px;
+font-weight: 400;
+color: #8B8D97 !important;
+}
+.signup-link {
+  color: rgba(85, 112, 241, 1);
+}
+
+.input-icon-left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.right-0{
+  right: 0;
+  left: auto;
+}

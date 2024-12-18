@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Orders | Metrix</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" href="./assets/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="./assets/css/sidebar.css">
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <link rel="stylesheet" href="./assets/css/orders.css">
+</head>
+<body>
+ 
+  <!-- Main Content -->
+  <div class="container-fluid p-0">
+    <!-- Sidebar -->
+    <aside class="sidebar_sec">
+      <div class="sidebar-header p-3">
+        <div class="logo d-flex align-items-center mb-4">
+          <img src="./assets/images/logo.png" alt="Logo" class="me-2" width="40">
+          <h4 class="m-0">Metrix</h4>
+        </div>
+        <nav>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="index.html" class="nav-link ">
+                <i class="fa-solid fa-chart-line me-2"></i> Dashboard
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="order.html" class="nav-link active">
+                <i class="bi bi-handbag me-2"></i> Orders
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="customer.html" class="nav-link">
+                <i class="bi bi-people me-2"></i> Customers
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="Inventory.html" class="nav-link">
+                <i class="fa-regular fa-folder me-2"></i> Inventory
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="Conversation.html" class="nav-link">
+                <i class="bi bi-chat-dots me-2"></i> Conversation
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="setting.html" class="nav-link">
+                <i class="bi bi-gear me-2"></i> Setting
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sidebar-footer p-3">
+        <a href="logout.html" class="nav-link text-danger">
+          <i class="fa fa-sign-out-alt me-2"></i> Logout
+        </a>
+      </div>
+    </aside>
+
+    <!-- Content Area -->
+    <div class="content_wrapper">
+      <!-- Navbar -->
+      <header class="navbar custom-navbar p-3">
+        <div class="container-fluid">
+          <div class="navbar-left">
+            <i class="fa fa-home me-2"></i>
+            <h5 class="m-0">Orders / View Orders</h5>
+          </div>
+          <div class="navbar-right">
+            <button class="shop-btn me-4 active-btn">Trendy's Shop</button>
+            <div class="notification-icon me-4">
+              <i class="fa fa-bell"></i>
+            </div>
+            <img src="./assets/images/user_icxon.png" alt="Profile" class="user-icon me-4">
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main-content p-3">
+        <!-- Orders Header -->
+        <section class="orders-header d-flex justify-content-between align-items-center mb-4 p-3">
+          <!-- Left Side: Order Info -->
+          <div class="d-flex align-items-center gap-4 left_sec">
+            <h5 class="mb-0">
+              Order Number <span class="text_muted">#743789</span>
+            </h5>
+            <h5 class="mb-0">
+              Order Date <span class="text_muted">12 Sept 2022 - 12:55 pm</span>
+            </h5>
+            <h5 class="mb-0 header-tracking">
+              Tracking ID <span class="text_muted">9348fjr73</span>
+              <i class="fa-regular fa-copy  ms-1"></i>
+            </h5>
+          </div>
+        </section>
+        
+            
+        <!-- Orders Content -->
+        <section class="container-fluid py-4">
+          <div class="row text-center">
+            <!-- 1st Order Box -->
+            <div class="col-lg-4">
+              <article class="order-box p-3 bg-white rounded h-100">
+                <!-- Top Section -->
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <!-- Icon and User Name -->
+                  <div class="d-flex align-items-center">
+                    <div class="icon-box d-flex align-items-center justify-content-center p-2 me-3">
+                      <i class="fa-solid fa-user fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="text-start text-dark mb-0">Janet Adebayo</h5>
+                      <p class="mb-0 text-muted">Customer since 12 Sept 2022</p>
+                    </div>
+                  </div>
+                  <!-- Status Button -->
+                  <div class="dropdown">
+                    <button class="status-btn pending">Pending</button>
+                  </div>
+                </div>
+                <!-- Contact Details -->
+                <div class="row">
+                  <!-- Phone Section -->
+                  <div class="col-6 text-start">
+                    <small class="text-muted">Phone</small>
+                    <p class="text-dark mb-0">+123 456 7890</p>
+                  </div>
+                  <!-- Email Section -->
+                  <div class="col-6 text-start">
+                    <small class="text-muted text-start">Email</small>
+                    <p class="text-dark mb-0">janet.adebayo@example.com</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+            <!-- 2nd Order Box -->
+            <div class="col-lg-4">
+              <article class="order-box p-3 bg-white rounded h-100">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="icon-box d-flex align-items-center justify-content-center p-2">
+                    <i class="bi bi-geo-alt fs-5"></i>
+                  </div>
+                </div>
+                <!-- Contact Details -->
+                <div class="row">
+                  <!-- Home Addres Section -->
+                  <div class="col-6 text-start">
+                    <small class="text-muted">Home Addres</small>
+                    <p class="text-dark mb-0">No. 15 Adekunle Street, Yaba, Lagos State</p>
+                  </div>
+                  <!-- Billing Address Section -->
+                  <div class="col-6 text-start">
+                    <small class="text-muted text-start">Billing Address</small>
+                    <p class="text-dark mb-0">No. 15 Adekunle Street, Yaba, Lagos State</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- 3rd Order Box -->
+            <div class="col-lg-4">
+              <article class="order-box p-3 bg-white rounded h-100">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="icon-box d-flex align-items-center justify-content-center p-2">
+                    <i class="bi bi-credit-card fs-5"></i>
+                  </div>
+                </div>
+                  <!-- Contact Details -->
+                  <div class="row">
+                    <!-- Payment Method Section -->
+                    <div class="col-6 text-start">
+                      <small class="text-muted">Payment Method</small>
+                      <p class="text-dark mb-0">Master Card</p>
+                    </div>
+                    <!-- Order Type Section -->
+                    <div class="col-6 text-start">
+                      <small class="text-muted text-start">Order Type</small>
+                      <p class="text-dark mb-0">Home Delivery</p>
+                    </div>
+                  </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Orders Table Section -->
+        <section class="col-12 mt-5">
+          <div class="table-container">
+            <header class="table-header">
+              <h2>Items <span class="header_text">3</span></h2>
+              <div class="table-actions">
+                <!-- Search Bar -->
+                <div class="search-bar">
+                  <i class="bi bi-search"></i>
+                  <input type="text" placeholder="Search" />
+                </div>
+                <!-- Filter Button -->
+                <button class="filter-btn">
+                  <i class="bi bi-funnel"></i> Filter
+                </button>
+                <!-- Date Picker Button -->
+                <button class="filter-btn">
+                  <i class="fa-regular fa-calendar-days"></i> Filter
+                </button>
+                <!-- Share Button -->
+                <button class="filter-btn">
+                  <i class="fa-regular fa-paper-plane"></i> Share
+                </button>
+                <!-- Bulk Action Dropdown -->
+                <button class="filter-btn">
+                  Bulk Action <i class="fa-solid fa-angle-down"></i>
+                </button>
+              </div>
+            </header>
+
+            <!-- Table -->
+          <!-- Table -->
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th>
+        <label class="custom-checkbox">
+          <input type="checkbox" id="select-all">
+          <span></span>
+        </label>
+      </th>
+      <th>Product Name<i class="bi bi-filter"></i></th>
+      <th>Unit Price <i class="bi bi-filter"></i></th>
+      <th>Qty <i class="bi bi-filter"></i></th>
+      <th>Discount <i class="bi bi-filter"></i></th>
+      <th>Order Total <i class="bi bi-filter"></i></th>
+      <th>Action <i class="bi bi-filter"></i></th>
+      <th>Status <i class="bi bi-filter"></i></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <label class="custom-checkbox">
+          <input type="checkbox" class="row-checkbox">
+          <span></span>
+        </label>
+      </td>
+      <td>
+        <div class="product-cell">
+          <img src="./assets/images/earing.jpg" alt="earing" class="product-img">
+          Earing
+        </div>
+      </td>
+      <td>₦25,000.00</td>
+      <td>2</td>
+      <td>₦0.00</td>
+      <td>₦50,000.00</td>
+      <td>
+        <div class="dropdown-container">
+          <button class="action-btn dropdown-toggle">
+            Pending <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li data-status="completed" class="dropdown-item">Completed</li>
+            <li data-status="in-progress" class="dropdown-item">In Progress</li>
+            <li data-status="pending" class="dropdown-item">Pending</li>
+          </ul>
+        </div>
+      </td>
+      <td><button class="status-btn pending">Pending </button></td>
+    </tr>
+    <tr>
+      <td>
+        <label class="custom-checkbox">
+          <input type="checkbox" class="row-checkbox">
+          <span></span>
+        </label>
+      </td>
+      <td>
+        <div class="product-cell">
+          <img src="./assets/images/pendent.jpg" alt="pendent" class="product-img">
+          Pendent
+        </div>
+      </td>
+      <td>₦25,000.00</td>
+      <td>2</td>
+      <td>₦0.00</td>
+      <td>₦50,000.00</td>
+      <td>
+        <div class="dropdown-container">
+          <button class="action-btn dropdown-toggle">
+            Pending <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li data-status="completed" class="dropdown-item">Completed</li>
+            <li data-status="in-progress" class="dropdown-item">In Progress</li>
+            <li data-status="pending" class="dropdown-item">Pending</li>
+          </ul>
+        </div>
+      </td>
+      <td><button class="status-btn pending">Pending </button></td>
+    </tr>
+    <tr class="custom-border-bottom">
+      <td>
+        <label class="custom-checkbox">
+          <input type="checkbox" class="row-checkbox">
+          <span></span>
+        </label>
+      </td>
+      <td>
+        <div class="product-cell">
+          <img src="./assets/images/watch.jpg" alt="watch" class="product-img">
+          Watch
+        </div>
+      </td>
+      <td>₦25,000.00</td>
+      <td>2</td>
+      <td>₦0.00</td>
+      <td>₦50,000.00</td>
+      <td>
+        <div class="dropdown-container">
+          <button class="action-btn dropdown-toggle">
+            Pending <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li data-status="completed" class="dropdown-item">Completed</li>
+            <li data-status="in-progress" class="dropdown-item">In Progress</li>
+            <li data-status="pending" class="dropdown-item">Pending</li>
+          </ul>
+        </div>
+      </td>
+      <td><button class="status-btn pending">Pending </button></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Table -->
+<!-- Amount Section -->
+<div class="amount-section">
+  <div class="amount-content">
+    <span class="amount-label">Total Amount:</span>
+    <span class="amount-value">₦150,000.00</span>
+  </div>
+</div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/order.js"></script>
+</body>
+</html>
